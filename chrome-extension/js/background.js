@@ -2,7 +2,12 @@ const onMessage = (request, sender, sendResponse) => {
   if (request.command === 'fetchPostedDate') {
     chrome.windows.getCurrent(currentWindow => {
       chrome.tabs.query({ active: true, windowId: currentWindow.id }, async activeTabs => {
-        // TODO: itemsページ以外を表示している場合に対応できていない
+
+        if (!/^https:\/\/qiita\.com\/.+?\/items\/[0-9a-z]{20}$/.test(activeTabs[0].url)) {
+          sendResponse(null);
+          return;
+        }
+
         const url = activeTabs[0].url + '/revisions';
         const res = await fetch(url);
         const content = await res.text();

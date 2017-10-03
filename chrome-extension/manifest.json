@@ -18,7 +18,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://qiita.com/*"],
+      "matches": ["https://qiita.com/*/items/*"],
       "js"     : ["js/script.js"],
       "run_at" : "document_start"
     }
