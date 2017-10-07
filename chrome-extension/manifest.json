@@ -17,6 +17,7 @@
     {
       "matches": [ "https://qiita.com/*/items/*" ],
       "js"     : [ "js/script.js", "js/lib/moment-with-locales.min.js" ],
+      "css"    : [ "css/style.css" ],
       "run_at" : "document_start"
     }
 
