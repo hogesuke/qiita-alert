@@ -12,11 +12,15 @@ document.addEventListener('DOMContentLoaded', () => {
   // 更新していない記事には投稿日時が表示されているので投稿日時の挿入処理をスキップ
   if (modified) {
     const postedDate = new Date(Date.parse(datetime));
+    const nowDate = new Date();
+    const diff = nowDate.getTime() - postDateDom.getTime();
+
     const formattedDate = [
       postedDate.getFullYear(), '年',
       ('0' + (postedDate.getMonth() + 1)).slice(-2), '月',
       ('0' + postedDate.getDate()).slice(-2), '日',
-      'に投稿'
+      'に投稿',
+      ` (${diff})`
     ].join('');
 
     const dom = document.createElement('div');
