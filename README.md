@@ -1,3 +1,3 @@
-github-adjuster
+qiita-alert
 ===============
-GitHubのコードビューアの幅を調整可能とするChrome拡張
+古いQiitaの記事の投稿をアラートするChrome拡張
