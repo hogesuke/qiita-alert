@@ -39,13 +39,13 @@ document.addEventListener('DOMContentLoaded', () => {
     dom.className = `ArticleAsideHeader__date qiita-alert ${noticeLevel}`;
     dom.innerText = formattedDate;
 
-    const target = document.querySelector('.ArticleAsideHeader__date');
+    const target = document.querySelector('.it-Header_time');
     target.parentNode.insertBefore(dom, target);
   } else {
     const dom = document.createElement('span');
     dom.innerText = ` (${postedDate.fromNow()})`;
 
-    const target = document.querySelector('.ArticleAsideHeader__date span');
+    const target = document.querySelector('.it-Header_time span');
     target.className = `qiita-alert ${noticeLevel}`;
     target.appendChild(dom);
   }
