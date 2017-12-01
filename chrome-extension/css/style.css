@@ -1,21 +1,23 @@
 .qiita-alert {
-    padding: 0 4px;
+  padding: 0 4px;
+  margin-right: 5px;
+  border-radius: 2px;
 }
 
 .qiita-alert.danger {
-    background-color: #ffd9d9;
-    border-color: #e49c9c;
-    color: #ce5353;
+  background-color: #ffd9d9;
+  border-color: #e49c9c;
+  color: #ce5353;
 }
 
 .qiita-alert.warning {
-    background-color: #fcf8e3;
-    border-color: #faebcc;
-    color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+  color: #8a6d3b;
 }
 
 .qiita-alert.safety {
-    background-color: #e1e1fb;
-    border-color: #9696d6;
-    color: #3b3bb9;
+  background-color: #e1e1fb;
+  border-color: #9696d6;
+  color: #3b3bb9;
 }
