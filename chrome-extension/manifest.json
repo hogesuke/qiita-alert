@@ -1,6 +1,6 @@
 {
   "name"   : "qiita-alert",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "manifest_version": 2,
   "description": "Qiitaの投稿日時を表示し、古い投稿を識別しやすくする拡張です。",
   "icons": {
